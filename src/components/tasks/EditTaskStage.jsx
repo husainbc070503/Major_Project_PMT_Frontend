@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import ShareIcon from "@mui/icons-material/Share";
+import AutorenewIcon from '@mui/icons-material/Autorenew';
 import {
   FormControl,
   FormControlLabel,
@@ -209,7 +209,7 @@ const EditTaskStage = ({ taskId, status }) => {
   return (
     <div>
       <Tooltip title="Change task status">
-        <ShareIcon
+        <AutorenewIcon
           color="primary"
           onClick={() => setOpen(true)}
           className="icon fs-5"
