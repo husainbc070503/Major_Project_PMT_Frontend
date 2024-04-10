@@ -21,6 +21,11 @@ const style = {
   background: "#fff",
   borderRadius: 2,
   p: 4,
+
+  "@media (max-width: 890px)": {
+    height: "630px",
+    overflow: "scroll",
+  },
 };
 
 const initialState = {
@@ -282,7 +287,6 @@ const AddProject = ({ isTeamProject, team, projectId, ind }) => {
                     label="Add Project Git Repository"
                     value={projectDetails.projectGithubRepository}
                     onChange={handleChange}
-                    required
                   />
                 </FormControl>
               </div>
@@ -294,7 +298,6 @@ const AddProject = ({ isTeamProject, team, projectId, ind }) => {
                     label="No of tasks to be performed"
                     value={projectDetails.noOfTasks}
                     onChange={handleChange}
-                    required
                   />
                 </FormControl>
               </div>

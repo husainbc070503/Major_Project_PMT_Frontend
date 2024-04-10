@@ -32,6 +32,11 @@ const style = {
   background: "#fff",
   borderRadius: 2,
   p: 4,
+
+  "@media (max-width: 890px)": {
+    height: "630px",
+    overflow: "scroll",
+  },
 };
 
 const Desc = styled(Typography)`
