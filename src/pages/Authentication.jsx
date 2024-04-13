@@ -440,7 +440,7 @@ const Authentication = () => {
                           <>
                             <TextFieldInput
                               title="Expertise/Skills"
-                              text="Use comma to separate skills/expertise"
+                              text="Use comma + space to separate skills/expertise eg. HTML, CSS, JS"
                               type="text"
                               others="expertise"
                               value={details.expertise}
