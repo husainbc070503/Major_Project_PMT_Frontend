@@ -16,7 +16,6 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import { Link } from "react-router-dom";
 
 const Table2 = ({ filteredTasks, fromAssigned }) => {
-  console.log("Table2");
   return (
     <div>
       <TableContainer>
@@ -40,7 +39,7 @@ const Table2 = ({ filteredTasks, fromAssigned }) => {
               </TableCell>
               {filteredTasks?.filter(
                 (task) => task?.leaderMessage || task?.guideMessage
-              )?.length > 0 && (
+              )?.length > 0 && !fromAssigned && (
                 <>
                   <TableCell align="center">
                     <Typography

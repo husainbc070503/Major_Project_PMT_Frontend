@@ -132,7 +132,7 @@ const EditTaskStage = ({ taskId, status }) => {
       });
     }
 
-    if (stage === "under review" && !attachment) {
+    if (stage === "to verify by teamLeader" && Object.keys(attachment).length === 0) {
       setLoading(false);
       return toast.error("Please upload pdf file.", {
         position: "top-right",
