@@ -91,7 +91,7 @@ const UploadCodeFile = ({ taskId, edit }) => {
     console.log(codeFile);
     setLoading(true);
 
-    if (!codeFile) {
+    if (Object.keys(codeFile).length === 0) {
       setLoading(false);
       return toast.error("Please upload code file.", {
         position: "top-right",
@@ -159,7 +159,7 @@ const UploadCodeFile = ({ taskId, edit }) => {
         progress: undefined,
         theme: "light",
       });
-    }
+    } 
   };
 
   return (
